@@ -286,7 +286,7 @@ body {
 #eva_walkcycle {
     width: 10vw;
     height: 21.4vw;
-    background-image: url(bitmoji6walk.svg);
+    background-image: url(bitmoji7walk.svg);
     background-size: 1000% 100%;
 }
 
@@ -383,11 +383,68 @@ body {
     }
 }
 
-.flod_hide {
+<<<<<<< HEAD .flod_hide {
     display: none;
 }
 
-#flod {
+=======
+/********************* Slange **********************/
+
+#slange_container {
+    position: absolute;
+    top: 7vw;
+    z-index: 1;
+}
+
+#slange_sprite {
+    background-image: url(slange_sprite.svg);
+    /* 1079,7x876 */
+    width: 20vw;
+    height: 16vw;
+    background-size: 700% 100%;
+}
+
+.slange_start_pos {
+    left: -20%;
+}
+
+.slange_move {
+    animation-name: slange_move_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes slange_move_kf {
+    0% {
+        left: -20%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.slange_movecycle {
+    animation-name: slange_movecycle_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(7);
+}
+
+@keyframes slange_movecycle_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -700% 0%;
+    }
+}
+
+
+/******************* Flod ***********************/
+
+> > > > > > > origin/master #flod {
     background-image: url(img/b%C3%B8lgen-03.svg);
     background-size: 500% 100%;
     width: 100vw;
@@ -413,5 +470,34 @@ $("#flod).addClass("flod_ind");
     }
     100% {
         background-position: -400%;
+    }
+}
+
+.baad_hide {
+    display: none;
+}
+
+#payoff1 {
+    background-image: url(mandibaad-03.svg);
+    background-size: 100%;
+    width: 20vw;
+    height: 35.55vw;
+    position: absolute;
+}
+
+.baad_ind {
+    animation-name: baad_kf;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+
+@keyframes baad_kf {
+    0% {
+        top: 50%;
+        right: 0;
+    }
+    100% {
+        top: 50%;
+        right: 40%;
     }
 }

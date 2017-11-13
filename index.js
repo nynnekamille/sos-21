@@ -29,7 +29,7 @@ function eva_ind() {
 }
 
 function eva_drejer() {
-    console.log("Eva kigger");
+    console.log("eva drejer");
     $("#eva_container").off("animationend", eva_drejer);
     $("#eva_container").removeClass("startpos_eva_container");
     $("#eva_container").removeClass("eva_container_kommer_ind");
@@ -59,4 +59,13 @@ function telefon_ind() {
     $("#telefon").show();
     $("#scene").off("animationend", telefon_ind);
     $("#telefon").addClass("telefon_billedecycle");
+    $("#telefon").on("animationend", slangeInd);
+}
+
+function slangeInd() {
+    console.log(slangeInd);
+    $("#telefon").off("animationend", slangeInd);
+    $("#slange_container").removeClass("slange_start_pos");
+    $("#slange_container").addClass("slange_flyver");
+    $("#slange_sprite").addClass("slange_flyvecycle");
 }
