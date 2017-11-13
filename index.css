@@ -41,6 +41,7 @@ body {
 
 /*********** Baggrund Slut *********/
 
+
 /*********** Forgrund *************/
 
 #forgrund {
@@ -68,6 +69,7 @@ body {
 
 
 /*********** Forgrund slut ********/
+
 
 /*********** Skyer    *************/
 
@@ -151,6 +153,7 @@ body {
 
 
 /********** Skyer slut ************/
+
 
 /********** Start knap ************/
 
@@ -382,6 +385,63 @@ body {
         background-position: -300% 0%;
     }
 }
+
+
+/********************* Slange **********************/
+
+#slange_container {
+    position: absolute;
+    top: 7vw;
+    z-index: 1;
+}
+
+#slange_sprite {
+    background-image: url(slange_sprite.svg);
+    /* 1079,7x876 */
+    width: 20vw;
+    height: 16vw;
+    background-size: 700% 100%;
+}
+
+.slange_start_pos {
+    left: -20%;
+}
+
+.slange_move {
+    animation-name: slange_move_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes slange_move_kf {
+    0% {
+        left: -20%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.slange_movecycle {
+    animation-name: slange_movecycle_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(7);
+}
+
+@keyframes slange_movecycle_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -700% 0%;
+    }
+}
+
+
+/******************* Flod ***********************/
 
 #flod {
     background-image: url(img/b%C3%B8lgen-03.svg);
