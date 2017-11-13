@@ -1,3 +1,5 @@
+//rasmus laver koderod
+
 $(window).on("load", startHistorien);
 $("#eva_container").addClass("startpos_eva_container");
 $("#tjek_telefon").hide();
