@@ -383,16 +383,16 @@ body {
     }
 }
 
+.flod_hide {
+    display: none;
+}
+
 #flod {
     background-image: url(img/b%C3%B8lgen-03.svg);
     background-size: 500% 100%;
     width: 100vw;
     height: 56.25vw;
     position: absolute;
-}
-
-.flod_hide {
-    display: none;
 }
 
 .flod_ind {
