@@ -13,7 +13,20 @@ body {
 }
 
 .zoomind {
-    transform: scale(13) translate(-13vw, -9vw);
+    animation-name: zoomind_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes zoomind_kf {
+    0% {
+        transform: scale(1) translate(0vw, 0vw);
+    }
+    100% {
+        transform: scale(13) translate(-13vw, -9vw);
+    }
 }
 
 #baggrund {
@@ -27,6 +40,7 @@ body {
 
 
 /*********** Baggrund Slut *********/
+
 
 /*********** Forgrund *************/
 
@@ -55,6 +69,7 @@ body {
 
 
 /*********** Forgrund slut ********/
+
 
 /*********** Skyer    *************/
 
@@ -139,6 +154,7 @@ body {
 
 /********** Skyer slut ************/
 
+
 /********** Start knap ************/
 
 #startknap {
@@ -209,7 +225,7 @@ body {
 
 .fugl_flyver {
     animation-name: fugl_flyver_kf;
-    animation-duration: 15s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
     animation-timing-function: linear;
@@ -335,6 +351,38 @@ body {
     }
     72% {
         transform: scaleX(-1);
+    }
+}
+
+
+/******************* Telefon *******************/
+
+#telefon {
+    position: absolute;
+    top: 7vw;
+    z-index: 1;
+    background-image: url(tlf_sprite.svg);
+    /* 462x396 */
+    width: 6vw;
+    height: 5vw;
+    background-size: 300% 100%;
+    left: 58vw;
+    top: 32vw;
+}
+
+.telefon_billedecycle {
+    animation-name: telefon_billedecycle_kf;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(3);
+}
+
+@keyframes telefon_billedecycle_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -300% 0%;
     }
 }
 

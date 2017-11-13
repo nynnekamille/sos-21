@@ -29,6 +29,7 @@ function eva_ind() {
 
 function eva_drejer() {
     console.log("Eva kigger");
+    $("#eva_container").off("animationend", eva_drejer);
     $("#eva_container").removeClass("startpos_eva_container");
     $("#eva_container").removeClass("eva_container_kommer_ind");
     $("#eva_container").addClass("kigpos_eva_container");
@@ -46,6 +47,14 @@ function sms_lyd() {
 }
 
 function start_zoomind() {
+    console.log("start_zoomind");
     $("#tjek_telefon").hide();
     $("#scene").addClass("zoomind");
+    $("#scene").on("animationend", telefon_ind);
+}
+
+function telefon_ind() {
+    console.log("telefon_ind");
+    $("#scene").off("animationend", telefon_ind);
+    $("#telefon").addClass("telefon_billedecycle");
 }
