@@ -1,6 +1,3 @@
-//rasmus laver koderod igen
-
-
 $(window).on("load", startHistorien);
 $("#eva_container").addClass("startpos_eva_container");
 $("#tjek_telefon").hide();
@@ -72,6 +69,3 @@ function slangeInd() {
     $("#slange_container").addClass("slange_move");
     $("#slange_sprite").addClass("slange_movecycle");
 }
-
-
-//nynne laver kode rod
