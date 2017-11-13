@@ -41,7 +41,6 @@ body {
 
 /*********** Baggrund Slut *********/
 
-
 /*********** Forgrund *************/
 
 #forgrund {
@@ -69,7 +68,6 @@ body {
 
 
 /*********** Forgrund slut ********/
-
 
 /*********** Skyer    *************/
 
@@ -154,7 +152,6 @@ body {
 
 /********** Skyer slut ************/
 
-
 /********** Start knap ************/
 
 #startknap {
@@ -198,8 +195,8 @@ body {
     z-index: 2;
     box-shadow: 0 0.9vw 1vw #999;
     position: absolute;
-    top: 35vw;
-    left: 25vw;
+    top: 34vw;
+    left: 5vw;
 }
 
 
@@ -366,8 +363,8 @@ body {
     width: 6vw;
     height: 5vw;
     background-size: 300% 100%;
-    left: 58vw;
-    top: 32vw;
+    left: 60vw;
+    top: 35vw;
 }
 
 .telefon_billedecycle {

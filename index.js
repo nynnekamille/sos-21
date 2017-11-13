@@ -1,6 +1,7 @@
 $(window).on("load", startHistorien);
 $("#eva_container").addClass("startpos_eva_container");
 $("#tjek_telefon").hide();
+$("#telefon").hide();
 /// START ///
 function startHistorien() {
     console.log("startHistorien");
@@ -55,6 +56,7 @@ function start_zoomind() {
 
 function telefon_ind() {
     console.log("telefon_ind");
+    $("#telefon").show();
     $("#scene").off("animationend", telefon_ind);
     $("#telefon").addClass("telefon_billedecycle");
 }
