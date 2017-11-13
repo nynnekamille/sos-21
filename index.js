@@ -1,4 +1,4 @@
-//rasmus laver koderod
+//rasmus laver koderod vi laver koderod
 
 $(window).on("load", startHistorien);
 $("#eva_container").addClass("startpos_eva_container");
