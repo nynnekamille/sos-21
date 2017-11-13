@@ -63,9 +63,9 @@ function telefon_ind() {
 }
 
 function slangeInd() {
-    console.log(slangeInd);
+    console.log("slangeInd");
     $("#telefon").off("animationend", slangeInd);
     $("#slange_container").removeClass("slange_start_pos");
-    $("#slange_container").addClass("slange_flyver");
-    $("#slange_sprite").addClass("slange_flyvecycle");
+    $("#slange_container").addClass("slange_move");
+    $("#slange_sprite").addClass("slange_movecycle");
 }
