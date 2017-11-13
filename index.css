@@ -41,7 +41,6 @@ body {
 
 /*********** Baggrund Slut *********/
 
-
 /*********** Forgrund *************/
 
 #forgrund {
@@ -69,7 +68,6 @@ body {
 
 
 /*********** Forgrund slut ********/
-
 
 /*********** Skyer    *************/
 
@@ -153,7 +151,6 @@ body {
 
 
 /********** Skyer slut ************/
-
 
 /********** Start knap ************/
 
@@ -386,7 +383,11 @@ body {
     }
 }
 
+<<<<<<< HEAD .flod_hide {
+    display: none;
+}
 
+=======
 /********************* Slange **********************/
 
 #slange_container {
@@ -443,16 +444,12 @@ body {
 
 /******************* Flod ***********************/
 
-#flod {
+> > > > > > > origin/master #flod {
     background-image: url(img/b%C3%B8lgen-03.svg);
     background-size: 500% 100%;
     width: 100vw;
     height: 56.25vw;
     position: absolute;
-}
-
-.flod_hide {
-    display: none;
 }
 
 .flod_ind {
@@ -473,5 +470,34 @@ $("#flod).addClass("flod_ind");
     }
     100% {
         background-position: -400%;
+    }
+}
+
+.baad_hide {
+    display: none;
+}
+
+#payoff1 {
+    background-image: url(mandibaad-03.svg);
+    background-size: 100%;
+    width: 20vw;
+    height: 35.55vw;
+    position: absolute;
+}
+
+.baad_ind {
+    animation-name: baad_kf;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+
+@keyframes baad_kf {
+    0% {
+        top: 50%;
+        right: 0;
+    }
+    100% {
+        top: 50%;
+        right: 40%;
     }
 }
