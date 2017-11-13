@@ -69,3 +69,6 @@ function slangeInd() {
     $("#slange_container").addClass("slange_move");
     $("#slange_sprite").addClass("slange_movecycle");
 }
+
+
+//nynne laver kode rod
