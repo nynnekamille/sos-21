@@ -405,7 +405,7 @@ body {
 }
 
 .slange_start_pos {
-    right: -20%;
+    left: -20%;
 }
 
 .slange_move {
@@ -505,4 +505,8 @@ $("#flod).addClass("flod_ind");
         top: 50%;
         right: 40%;
     }
+}
+
+.engel_hide {
+    display: none;
 }
