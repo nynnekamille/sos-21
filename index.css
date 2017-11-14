@@ -444,6 +444,10 @@ body {
 
 /******************* Flod ***********************/
 
+.flod_hide {
+    display: none;
+}
+
 #flod {
     background-image: url(img/b%C3%B8lgen-03.svg);
     background-size: 500% 100%;
