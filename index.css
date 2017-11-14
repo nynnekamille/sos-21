@@ -483,7 +483,7 @@ $("#flod).addClass("flod_ind");
 
 #payoff1 {
     background-image: url(mandibaad-03.svg);
-    background-size: 100%;
+    background-size: 400%;
     width: 20vw;
     height: 35.55vw;
     position: absolute;
@@ -512,5 +512,27 @@ $("#flod).addClass("flod_ind");
 }
 
 #payoff2 {
-    background-image:
+    background-image: url(img/pse-04.svg);
+    background-size: 100%;
+    width: 20vw;
+    height: 35.55vw;
+    position: absolute;
+}
+
+engel_ind {
+    animation-name: engel_kf;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-timing-function: steps(3);
+}
+
+@keyframes {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+    100% {
+        top: 40%;
+        left: 50%;
+    }
 }
