@@ -444,7 +444,11 @@ body {
 
 /******************* Flod ***********************/
 
-> > > > > > > origin/master #flod {
+.flod_hide {
+    display: none;
+}
+
+#flod {
     background-image: url(img/b%C3%B8lgen-03.svg);
     background-size: 500% 100%;
     width: 100vw;
@@ -483,6 +487,7 @@ $("#flod).addClass("flod_ind");
     width: 20vw;
     height: 35.55vw;
     position: absolute;
+    background-repeat: no-repeat;
 }
 
 .baad_ind {
